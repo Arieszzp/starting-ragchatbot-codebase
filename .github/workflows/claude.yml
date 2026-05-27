@@ -8,6 +8,11 @@ on:
   pull_request:
     types: [opened, closed, synchronized]
 
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
+
 jobs:
   claude:
     runs-on: ubuntu-latest
