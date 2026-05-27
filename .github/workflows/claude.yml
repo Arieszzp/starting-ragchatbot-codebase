@@ -23,5 +23,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_base_url: https://api.minimaxi.com/anthropic
+          anthropic_model: MiniMax-M2.7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
